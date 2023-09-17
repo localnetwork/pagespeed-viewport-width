@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style type="text/css">
         body {
-            font-size: 100px;
+            font-size: 50px;
         }
     </style>
 </head>
@@ -14,7 +14,9 @@
 <body>
     <script>
         document.querySelector("body").appendChild(
-            document.createTextNode(window.innerWidth.toString() + "px Width ") + window.innerHeight.toString() + 'px Height');
+            document.createTextNode(window.innerWidth.toString() + "px Width " + window.innerHeight.toString() + "px Height"),
+        );
+
     </script>
 </body>
 
