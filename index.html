@@ -9,15 +9,27 @@
             font-size: 50px;
         }
     </style>
+    <script>
+        // Function to measure page load time
+        window.addEventListener('load', function () {
+            // Calculate load time
+            var loadTime = performance.now();
+            var loadTimeInSeconds = (loadTime / 1000).toFixed(2); // Convert milliseconds to seconds
+
+            // Display load time in seconds
+            console.log('Page loaded in ' + loadTimeInSeconds + ' seconds');
+
+            // Display viewport dimensions
+            var viewportDimensions = window.innerWidth.toString() + "px Width " + window.innerHeight.toString() + "px Height";
+            document.querySelector("body").appendChild(
+                document.createTextNode(viewportDimensions)
+            );
+        });
+    </script>
 </head>
 
 <body>
-    <script>
-        document.querySelector("body").appendChild(
-            document.createTextNode(window.innerWidth.toString() + "px Width " + window.innerHeight.toString() + "px Height"),
-        );
 
-    </script>
 </body>
 
 </html>
