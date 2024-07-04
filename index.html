@@ -20,7 +20,7 @@
             console.log('Page loaded in ' + loadTimeInSeconds + ' seconds');
 
             // Display viewport dimensions
-            var viewportDimensions = window.innerWidth.toString() + "px Width " + window.innerHeight.toString() + "px Height";
+            var viewportDimensions = loadTimeInSeconds + window.innerWidth.toString() + "px Width " + window.innerHeight.toString() + "px Height";
             document.querySelector("body").appendChild(
                 document.createTextNode(viewportDimensions)
             );
